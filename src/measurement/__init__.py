@@ -1,5 +1,5 @@
 """Measurement setup, simulation, and energy estimation."""
-from src.measurement.setup import MeasurementSetup, create_measurement_setups
+from src.measurement.setup import MeasurementSetup, create_measurement_setups, create_posthoc_setups
 from src.measurement.simulation import (
     create_state_preparation_circuit,
     simulate_measurement_group,
@@ -15,6 +15,7 @@ from src.measurement.estimation import (
 __all__ = [
     'MeasurementSetup',
     'create_measurement_setups',
+    'create_posthoc_setups',
     'create_state_preparation_circuit',
     'simulate_measurement_group',
     'simulate_all_groups',
